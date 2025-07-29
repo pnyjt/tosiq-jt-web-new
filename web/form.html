@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <fieldset>
+
+        <legend>Registration Form</legend>
+
+        <input list="languages" type="text" placeholder="Select Language">
+        <datalist id="languages">
+            <option>JavaScript</option>
+            <option>ReactJs</option>
+            <option>Python</option>
+            <option>HTML</option>
+        </datalist>
+        <hr>
+        
+        <form>
+            <input type="text" placeholder="Username"> <br><br>
+            <input type="email" placeholder="Email"> <br><br>
+            <input type="number" placeholder="Number"> <br><br>
+            <input type="password" placeholder="Password"> <br><br>
+            <input type="date"> <br><br>
+            <input type="checkbox"> I agreed to the terms and conditions. <br><br>
+            Gender: 
+            <input type="radio" name="gender" > Male
+            <input type="radio" name="gender" > Female <br><br>
+            
+            <select required>
+                <option>----Select Country----</option>
+                <option value="uae">UAE</option>
+                <option value="aus">Australia</option>
+                <option value="pak">Pakistan</option>
+            </select> <br><br>
+            
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+        
+    </fieldset>
+</body>
+
+</html>

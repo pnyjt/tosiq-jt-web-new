@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    margin: 0px; padding: 0px;
+    background-color: #f1f1f1;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-wrapper{
+    background-color: #fff;
+    width: 80%;
+    margin: 12px auto;
+    padding: 16px 24px 16px 16px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-wrapper > .brand > img{
+    mix-blend-mode: multiply;
+}
+.navbar-wrapper > .links > nav{
+    font-size: 20px;
+}
+.navbar-wrapper > .links > nav > ul{
+    list-style: none;
+}
+.navbar-wrapper > .links > nav > ul > li{
+    display: inline;
+    margin-left: 20px;
+}
+.navbar-wrapper > .links > nav > ul > li > a{
+    text-decoration: none;
+    color: #333;
+}
+.navbar-wrapper > .links > nav > ul > li:hover a{
+    border-bottom: 2px solid red;
+    color: red;
+}

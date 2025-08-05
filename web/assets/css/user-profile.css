@@ -1,0 +1,38 @@
+body{
+    margin: 0px; padding: 0px;
+    background-color: #EFF1F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "arial";
+    
+}
+.user-profile{
+    background-color: #fff;
+    padding: 16px;
+    /* padding: 16px 16px 16px 16px;
+    padding: 16px 8px; */
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #ccc;
+    text-align: center;
+    width: 180px;
+}
+.user-profile .user-img img{
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #ccc;
+}
+.user-body .designation{
+    color: #8B8D8E;
+    font-size: 11px;
+}
+.user-profile .btn button{
+    box-shadow: 3px 3px 5px #ccc;
+    background-color: #748DFF;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}

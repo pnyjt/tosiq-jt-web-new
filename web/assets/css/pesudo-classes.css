@@ -1,0 +1,28 @@
+.box1, .box2, .box3{
+    height: 100px;
+    width: 100px;
+    margin-top: 12px;
+    color: #fff;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: blue;
+}
+/* effect */
+
+.box1:hover{
+    box-shadow: 2px 2px 5px #000;
+}
+
+.box2:focus{
+    background-color: black;
+}
+
+.box3:active{
+    background-color: brown;
+}

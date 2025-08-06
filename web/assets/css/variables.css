@@ -1,0 +1,11 @@
+:root{
+    --txt-clr: yellow;
+    --bg-clr: yellow;
+}
+h1{
+    color: var(--txt-clr);
+}
+h2{
+    color: var(--txt-clr);
+    background-color: var(--bg-clr);
+}

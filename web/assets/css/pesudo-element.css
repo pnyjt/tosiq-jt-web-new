@@ -1,0 +1,23 @@
+h1{
+    color: #9a9a9afe;
+    cursor: pointer;
+    position: relative;
+    width: max-content;
+}
+h1::before{
+    content:"";
+    height: 100%;
+    width: 0%;
+    padding: 4px;
+    
+    background: #daffbf;
+background: linear-gradient(90deg, rgba(218, 255, 191, 1) 0%, rgba(250, 190, 218, 1) 50%, rgba(194, 255, 201, 1) 100%);
+
+    border-radius: 5px;
+    transition: all .5s;
+    position: absolute;
+    z-index: -1;
+}
+h1:hover::before{
+    width: 100%;
+}

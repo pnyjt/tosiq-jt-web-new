@@ -23,3 +23,8 @@ input:not(.terms):focus{
     background-color: #ffffffc2;
     box-shadow: none;
 }
+form .signin-btn{
+    background: #3F5EFB !important;
+    background: linear-gradient(266deg, rgba(36, 93, 191, 1) 0%, rgba(159, 61, 239, 1) 100%) !important;
+    color: #fff;
+}

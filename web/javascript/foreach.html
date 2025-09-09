@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="my-list"></ul>
+    
+    <script>
+        foreachloop();
+        function foreachloop(){
+            let myList = document.getElementById("my-list");
+             //let randomList = ['Fruits', 'Sports', 'Foods', 'Cars'];
+            let randomList = [
+                {id: 1, name: 'Usman', age: 45},
+                {id: 2, name: 'Ali', age: 20},
+                {id: 3, name: 'Asad', age: 23},
+            ]
+
+            randomList.forEach( (item) => {
+                myList.innerHTML += `
+                <li>${item.id} - ${item.name} - ${item.age} </li>
+                `
+            })
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="text1">
+    <button id="btn">Show</button>
+    <hr>
+
+    <button id="toggle">Toggle content</button>
+    <p id="p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ex id placeat officiis explicabo eaque vel quaerat maxime quasi fuga? Ratione quam nemo consequatur libero ipsa reiciendis impedit repellendus iusto!
+    </p>
+
+    <input type="password" id="pswd" placeholder="Enter strong password">
+    <input type="checkbox" id="pswd-toggle">
+    <!-- js -->
+    <script src="../assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            console.log("This is JQuery");
+            
+            $("#btn").on("click", function(){
+                let text1 = $("#text1").val();
+                text1 != "" ? 
+                console.log(text1) : 
+                console.log("Fill the field first")
+            });
+
+            // toggle content
+            // $("#p").show();
+            $("#toggle").on("click", function(){
+                // $("#p").toggle();
+                // $("#p").slideUp("slow");
+                // $("#p").slideToggle("slow");
+                $("#p").fadeToggle("slow");
+            });
+
+            // show/hide password
+            $("#pswd-toggle").click(function(){
+                let toggle = $(this).prop("checked");
+                // console.log(toggle)
+                toggle ? 
+                $("#pswd").prop("type", "text") :
+                $("#pswd").prop("type", "password")
+            })
+
+        })
+    </script>
+
+</body>
+</html>

@@ -9,6 +9,8 @@
 
     <input type="text" id="text1">
     <button id="btn">Show</button>
+
+    <ol id="list"></ol>
     <hr>
 
     <button id="toggle">Toggle content</button>
@@ -16,8 +18,9 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ex id placeat officiis explicabo eaque vel quaerat maxime quasi fuga? Ratione quam nemo consequatur libero ipsa reiciendis impedit repellendus iusto!
     </p>
 
-    <input type="password" id="pswd" placeholder="Enter strong password">
+    <input type="password" id="pswd" placeholder="Enter strong password"> <br>
     <input type="checkbox" id="pswd-toggle">
+    <label for="pswd-toggle">Show password</label>
     <!-- js -->
     <script src="../assets/js/jquery.js"></script>
     <script>
@@ -26,9 +29,12 @@
             
             $("#btn").on("click", function(){
                 let text1 = $("#text1").val();
-                text1 != "" ? 
-                console.log(text1) : 
-                console.log("Fill the field first")
+                let list = $("#list");
+                list.append(`<li> ${text1} </li>`);
+                //text1 != "" ? 
+                //console.log(text1) : 
+                //console.log("Fill the field first")
+
             });
 
             // toggle content

@@ -1,0 +1,32 @@
+.clr-btns button {
+  padding: 4px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clr-btns button:hover {
+  box-shadow: 0px 0px 10px #ccc;
+}
+.clr-btns button:nth-child(1) {
+  background-color: red;
+  color: #f1f1f1    
+}
+.clr-btns button:nth-child(2) {
+  background-color: green;
+  color: #f1f1f1    
+}
+.clr-btns button:nth-child(3) {
+  background-color: blue;
+  color: #f1f1f1    
+}
+.clr-btns button:nth-child(4) {
+  background-color: #696FC7;
+  color: #f1f1f1    
+}
+
+.clr-box{
+  height: 200px;
+  width: 400px;
+  margin-top: 8px;
+  border-radius: 12px;
+}

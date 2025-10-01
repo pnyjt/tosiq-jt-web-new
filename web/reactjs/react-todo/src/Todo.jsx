@@ -3,6 +3,8 @@ import { FaRegTrashCan } from "react-icons/fa6";
 
 const Todo = () => {
 
+    // arr1 = [1,3,4,5]; localstorage.setitem("todos", JSON.stringfy(arr1))
+    // let a = localstorage.getitem("todos") ; let todosArray = Json.parse(a)
     const [ inputVal, setInputVal ] = useState("")
     const [ items, setItems ] = useState([])
     const addNewItem = () => {
@@ -43,7 +45,7 @@ const Todo = () => {
                                 items.map((item, i)=>{
                                     return (
                                         <li key={i}>
-                                            <div className='flex justify-between p-1 my-1 rounded bg-amber-300'>
+                                            <div className='flex justify-between p-1 mt-1 rounded bg-amber-300'>
                                                 <span>{item}</span>
                                                 <button 
                                                 onClick={() => removeItem(i)}

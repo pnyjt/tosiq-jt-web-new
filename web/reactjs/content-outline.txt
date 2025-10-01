@@ -1,0 +1,25 @@
+Mern Stack
+M = Mongo db
+E = ExpressJs
+R = React js
+N = Nodejs
+
+Pre req. (Html , Css, Bootstrap, Tailwind, Js)
+
+ReactJS
+	Basics (programming)
+	Hooks (useState, useEffect)
+	Components
+	Props
+	Pages
+	Routing (React router dom)
+	Layouts ()
+	ContextApi (State Management)
+
+ExpressJs, NodeJs, MongoDB
+Logic building
+Apis(Url)
+Crud operation (Create, Read, Update, Delete)
+Login / Signup (jwt)
+
+Final Project CMS: (Website, Dashboard)

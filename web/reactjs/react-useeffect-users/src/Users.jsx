@@ -19,10 +19,16 @@ const Users = () => {
         }
         getUsers();
     })
+    
 
   return (
     <div className='m-4'>
         <div className='text-3xl'>User List</div>
+        <div className='mt-4'>
+            <input 
+            className='w-[300px] py-1 px-3 bg-purple-100 rounded focus:outline-none border border-purple-500'
+            type="text" placeholder='Search here' />
+        </div>
         <div className='my-4'>
             {isLoading ? 
             <ScaleLoader color="purple" /> :

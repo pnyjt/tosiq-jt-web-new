@@ -1,9 +1,8 @@
 import React from 'react'
-import { MdOutlineAlternateEmail } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { IoGlobeOutline } from "react-icons/io5";
+import { IoGlobeOutline, IoMailOutline } from "react-icons/io5";
 
 const UserCard = ({ user }) => {
     return (
@@ -12,7 +11,7 @@ const UserCard = ({ user }) => {
                 <div>
                     {user.name}
                     <span className='block text-[11px] text-gray-600'>
-                        <MdOutlineAlternateEmail className='inline -mt-1 mr-1'/>
+                        <IoMailOutline className='inline mt-[-2px] mr-1'/>
                         {user.email}
                     </span>
                 </div>

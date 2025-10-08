@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import UserCard from '../components/UserCard'
 import { ScaleLoader } from 'react-spinners'
+import { USERS_API } from '../resources/api.js'
 
 const Users = () => {
     const [users, setUsers] = useState([])
@@ -10,7 +11,7 @@ const Users = () => {
 
     useEffect(() => {
         const getUsers = async () => {
-            const response = await fetch("https://jsonplaceholder.typicode.com/users")
+            const response = await fetch(USERS_API)
             const userData = await response.json();
 
             if (!userData) {

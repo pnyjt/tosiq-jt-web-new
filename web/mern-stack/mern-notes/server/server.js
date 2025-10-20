@@ -1,19 +1,18 @@
 import express from 'express';
 import dotenv from 'dotenv'
 import { connectDB } from './config/db.js'
-import Note from './models/notesModel.js'
+import notesRoute from './routes/notesRoute.js'
+import { PREFIX_1 } from './resource/string.js';
 
 dotenv.config()
 const app = express();
+app.use(express.json())
 const PORT= process.env.PORT || 5000;
 app.get('/', (req, res) => {
     res.send("Hello from server 1")
 })
 
-app.get('/notes', async (req, res) => {
-    const notes = await Note.find({})
-    return res.send({status: true, notes})
-})
+app.use(PREFIX_1, notesRoute)
 
 app.listen(PORT, () => {
     connectDB();

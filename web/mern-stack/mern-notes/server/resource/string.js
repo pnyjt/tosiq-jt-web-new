@@ -1,0 +1,1 @@
+export const PREFIX_1 = '/api/v1';

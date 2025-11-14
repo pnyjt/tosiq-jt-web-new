@@ -26,3 +26,20 @@ export const createNote = async (req, res) => {
         console.log("====> Something went wrong: ", error)
     }
 }
+
+export const deleteNote = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const result = await Note.findByIdAndDelete({_id: id});
+        if (result) {
+            return res.send({status: true, message: "Data has been deleted"})
+        } else {
+            return res.send({status: false, message: "Failed to delete!"})
+        }
+    } catch (error) {
+        console.log("Error: ", error);
+    }
+}
+
+export const detailNote = async (req, res) => {}
+export const updateNote = async (req, res) => {}

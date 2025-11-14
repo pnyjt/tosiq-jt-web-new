@@ -41,7 +41,7 @@ const NotesList = () => {
                     notes.map( (note, i) => {
                         return (
                             <div key={i} className='max-sm:col-span-12 lg:col-span-4 md:col-span-6 sm:col-span-6'>
-                                <NotesItem note={note} />
+                                <NotesItem note={note} setNotes={setNotes} />
                             </div>
                         )
                     })
